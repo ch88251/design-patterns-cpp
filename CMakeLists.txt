@@ -8,3 +8,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Add subdirectories for each design pattern
 add_subdirectory(src/patterns/composite)
 add_subdirectory(src/patterns/adapter)
+add_subdirectory(src/patterns/factory)
