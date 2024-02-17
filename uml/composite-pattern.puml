@@ -1,0 +1,26 @@
+@startuml
+
+skinparam linetype ortho
+skinparam nodesep 200
+
+abstract class VehiclePart {
+    + getCost() : Decimal
+}
+
+class VehicleAssembly {
+  - parts : vector<VehiclePart>
+  + addPart(part : VehiclePart) : void
+  + removePart(part : VehiclePart) : void
+  + getCost() : Decimal
+}
+
+class Chassis {
+  + getCost() : Decimal
+}
+
+VehiclePart <|-- VehicleAssembly
+VehicleAssembly " 1 " o-- " 0..* " VehiclePart
+VehiclePart <|-- Chassis
+VehiclePart <|-- Engine
+
+@enduml
