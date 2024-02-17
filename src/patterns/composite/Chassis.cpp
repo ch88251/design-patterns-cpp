@@ -1,8 +1,8 @@
 // Chassis.cpp
 #include "Chassis.h"
 
-Chassis::Chassis(double cost) : cost(cost) {}
+Chassis::Chassis(Decimal cost) : cost(cost) {}
 
-double Chassis::getCost() const {
+Decimal Chassis::getCost() const {
     return cost;
 }

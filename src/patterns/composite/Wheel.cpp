@@ -1,7 +1,8 @@
 #include "Wheel.h"
 
-Wheel::Wheel(double cost) : cost(cost) {}
 
-double Wheel::getCost() const {
+Wheel::Wheel(Decimal cost) : cost(cost) {}
+
+Decimal Wheel::getCost() const {
     return cost;
 }

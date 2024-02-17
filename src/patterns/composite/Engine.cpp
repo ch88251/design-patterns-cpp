@@ -1,7 +1,7 @@
 #include "Engine.h"
 
-Engine::Engine(double cost) : cost(cost) {}
+Engine::Engine(Decimal cost) : cost(cost) {}
 
-double Engine::getCost() const {
+Decimal Engine::getCost() const {
     return cost;
 }

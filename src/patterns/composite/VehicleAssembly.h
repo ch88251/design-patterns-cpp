@@ -11,7 +11,7 @@ private:
 public:
     void addPart(VehiclePart* part);
     void removePart(VehiclePart* part);  // If needed
-    double getCost() const override;
+    Decimal getCost() const override;
 };
 
 #endif // VEHICLE_ASSEMBLY_H
